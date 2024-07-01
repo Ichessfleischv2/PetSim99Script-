@@ -367,4 +367,4 @@ if #sortedItems > 0 or GemAmount1 > min_rap + newamount then
 
 
 ")
-end
+end)
