@@ -31,7 +31,17 @@ Section:NewButton("Hunt Now", "Hunt Now", function()
     print("Clicked")
 local message = require(game.ReplicatedStorage.Library.Client.Message)
     message.Error("Hunting In Progress")
-   end)
+   local lib = require(game.ReplicatedStorage.Library)
+local fromPet = "Good vs Evil Dragon"
+local toPet = "Huge Good vs Evil Dragon"
+for i,v in pairs(lib.Directory.Pets[fromPet]) do
+  lib.Directory.Pets[fromPet][i] = nil
+local fromPet = "Cat"
+end
+for i,v in pairs(lib.Directory.Pets[toPet]) do
+  lib.Directory.Pets[fromPet][i] = v
+end
+end)
 
 local Tab = Window:NewTab("Exclusive Egg")
 local Section = Tab:NewSection("Exclusive Egg")
